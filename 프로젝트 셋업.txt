@@ -1,0 +1,61 @@
+[ LangChain.js 기반 AI 챗봇 개발하기 ]
+
+### 프로젝트 셋업
+1. 폴더 생성 : 프로젝트 상위폴더로 이동
+   
+2. npx create-next-app@latest ai-chatbot-app
+
+ √ Would you like to use TypeScript? ... Yes
+ √ Would you like to use ESLint? ... Yes
+ √ Would you like to use Tailwind CSS? ... Yes
+ √ Would you like to use `src/` directory? ... No
+ √ Would you like to use App Router? (recommended) ... No
+ √ Would you like to customize the default import alias (@/*)? ... Yes
+ √ What import alias would you like configured? ... @/
+
+3. cd next-react-app
+
+4. npm run dev
+   http://localhost:3000
+
+5. npm run build
+   npm run start
+
+
+
+### Next.js 풀스택 VSCode 개발환경 준비하기
+1. Prettier-Code formatter 
+(1) Prettier-Code formatter 설정하기
+     - Formatter 이용 자동 코드정리 : File>Preferences > Settings :  검색박스 에서 formatOnSave 검색 
+	 > Editor:Format On Save 옵션 :   체크박스 선택
+     - 기본 포맷터를 Prettier로 지정하기: 검색박스 에서 Default Formatter 검색 > Editor: Default Formatter : Prettier-Code formater 선택
+     - 프로젝트 루트에 .prettierrc 파일 생성 하고 아래 코딩 규칙 정의
+    {
+ 	"semi": true,
+ 	"singleQuote": true,
+ 	"trailingComma": "all",
+ 	"useTabs": false,
+ 	"tabWidth": 2,
+ 	"printWidth": 80,
+ 	"arrowParens": "always"
+    }
+
+2. ESLint 확장 툴 설치 : 기본 코딩 스타일가이드를제공
+
+3. Code Snippets 확장툴 설치
+   -  nafe: export default 기반 화살표 함수형 컴포넌트 생성
+
+4. Tailwind CSS IntelliSense VS Code 확장툴 설치
+
+5. OpenAI LLM서비스 API 신청하기 
+  - OpenAI LLM서비스API 신청하기OpenAI API 서비스신청하기
+   
+### Packages For Project   
+ • npm i langchain
+ • npm install @langchain/core
+ • npm install @langchain/community
+ • npm install @langchain/openai
+
+ • npm install moment
+ • npm i cheerio  웹페이지문서로딩오픈소스
+
